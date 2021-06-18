@@ -1,0 +1,23 @@
+[{
+  "id":1,
+  "name": "Tool",
+  "album": "Lateralus",
+  "releaseDate": "May 15, 2001",
+  "imgURL": "https://townsquare.media/site/366/files/2020/08/lateralus-51b0c267a40ba-e1544218652314-900x625.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89"
+},
+
+{
+  "id":2,
+  "name": "All That Remains",
+  "album": "The Fall of Ideals",
+  "releaseDate": "July 11, 2006",
+  "imgURL": "https://pp.userapi.com/c638520/v638520474/51789/1euEUKZlCDQ.jpg"
+},
+
+{"id":3,
+  "name": "A Day to Remember",
+  "album": "Common Courtesy",
+  "releaseDate": "October 8, 2013",
+  "imgURL": "https://images-na.ssl-images-amazon.com/images/I/41TTMk75DTL._AC_UL600_SR600,600_.jpg"
+  }
+]

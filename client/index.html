@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Tell Me My Fortune</button>
+    <button id="colorChanger">Random Color</button>
+    <!-- <button id="bandButton">Guess That Band!</button> -->
+    <button id="struggleButton">Did I struggle with this assessment?</button>
+    <form>
+      <label for="bands">Choose a Band</label>
+      <select name="bands" id="bands">
+        <option value="adtr">A Day To Remember</option>
+        <option value="tool">Tool</option>
+        <option value="atr">All That Remains</option>
+        <option value="mtca">Metallica</option>
+      </select>
+    </form>
+    <form>
+      <input
+      type="text"
+      placeholder="whats your favorite band?"/>
+      <button>Submit</button>
+    </form>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+<!-- 
+    <section id="band-container"></section>
+    
+    <main>
+      <form>
+        <input 
+        type="text"
+        id="band"
+        placeholder="Favorite Band"/>
+
+        <input 
+        type="text"
+        id="album"
+        placeholder="Album"/>
+
+        <input
+        type="text"
+        id="releaseDate"
+        placeholder="Released When?"/>
+
+        <input
+        type="text"
+        id="imgURL"
+        placeholder="Album Cover Image"/>
+        <button>Add My Band</button>
+      </form>
+      
+      <section id="bandsContainer"></section>
+
+    </main> -->
+
+    <script>
+      document.getElementById("complimentButton").onclick = function () {
+        axios.get("http://localhost:4000/api/compliment/")
+            .then(function (response) {
+              const data = response.data
+              alert(data)
+            })
+      },
+
+      document.getElementById("fortuneButton").onclick = function () {
+        axios.get("http://localhost:4000/api/fortune/")
+        .then(function (response) {
+          const data = response.data
+          alert(data)
+        } )
+      },
+
+      // document.getElementById("bandButton").onClick = function() {
+      //   axios.get("http://localhost:4000/api/bands/")
+      //   .then(function (response) {
+      //     const data = response.data
+      //     display (data)
+      //   })
+      // }
+
+      document.getElementById("struggleButton").onclick = function () {
+        axios.get("http://localhost:4000/api/struggle/")
+        .then(function (response) {
+          const data = response.data
+          alert(data)
+        })
+      }
+
+
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="/server/db.json"></script> -->
+
+  </body>
+</html>

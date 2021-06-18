@@ -1,0 +1,35 @@
+body {
+  background-color: white;
+}
+
+#bandsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.bandAlbumCover {
+  width: 300px; 
+  height: 300px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.bandsCard {
+  width: 300px;
+  margin: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.albumReleaseDate {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.btns-container {
